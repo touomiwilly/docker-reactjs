@@ -8,8 +8,3 @@ before_install:
 script:
   - docker run touomiwilly/docker-react npm run test -- --coverage
 
-deploy:
-  provider: "gae"
-  keyfile: "account.json"
-  project: "crack-map-230602"
-  on: master
