@@ -8,5 +8,5 @@ RUN npm run build
 
 # Phase II : Prod phase
 FROM nginx as prod
-EXPOSE 80
+#EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html
